@@ -68,7 +68,7 @@ automl_config = AutoMLConfig(compute_target=compute_target,
 ![images](https://github.com/Vzard/ML-Azure-Capstone/blob/master/starter_file/jobrun.png)
 
 
-![images](https://github.com/Vzard/ML-Azure-Capstone/blob/master/starter_file/running experiment.png)
+![images](https://github.com/Vzard/ML-Azure-Capstone/blob/master/starter_file/expt.png)
 
 
 
