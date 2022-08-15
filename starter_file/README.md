@@ -42,7 +42,8 @@ Data is accessed via TabularDatasetFactory.from_delimited_files(path=url_path)
 
 Data is registered as shown below
 
-![images](https://github.com/Vzard/ML-Azure-Capstone/starter_file/registerdata.png)
+
+![registerdata](https://user-images.githubusercontent.com/13240941/184569337-52dadcfe-3a86-4822-81b4-9f7d60563d27.png)
 
 
 ### Results
