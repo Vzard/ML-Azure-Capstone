@@ -49,8 +49,8 @@ Data is accessed via TabularDatasetFactory.from_delimited_files(path=url_path)
 automl_settings = {
     "experiment_timeout_minutes": 20,  // This sets timeout for experiment
     "max_concurrent_iterations": 4,  //4 trials run concurrently
-    "primary_metric" : 'AUC_weighted', //WHile other metrics can be chosen for classification this is for applicability
-    "n_cross_validations": 5  //reduce bias with 5 fold cross validation
+    "primary_metric" : 'AUC_weighted', // This is chosen given the imbalanced data
+    "n_cross_validation" :10  //lowest empirically acceptable values. 
 }
  
 automl_config = AutoMLConfig(compute_target=compute_target,
