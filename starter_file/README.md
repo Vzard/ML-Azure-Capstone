@@ -42,7 +42,7 @@ Data is accessed via TabularDatasetFactory.from_delimited_files(path=url_path)
 
 Data is registered as shown below
 
-![images](https://github.com/Vzard/Assignment-3/starter_files/registerdata.png)
+![images](https://github.com/Vzard/ML-Azure-Capstone/starter_file/registerdata.png)
 
 
 ### Results
