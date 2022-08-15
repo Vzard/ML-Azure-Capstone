@@ -42,9 +42,7 @@ Data is accessed via TabularDatasetFactory.from_delimited_files(path=url_path)
 
 Data is registered as shown below
 
-
-![registerdata](https://user-images.githubusercontent.com/13240941/184569337-52dadcfe-3a86-4822-81b4-9f7d60563d27.png)
-
+https://github.com/Vzard/ML-Azure-Capstone/blob/master/starter_file/registerdata.png
 
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
