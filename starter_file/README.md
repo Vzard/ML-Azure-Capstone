@@ -36,10 +36,13 @@ The data set is from Kaggle at http:///www.kaggle.com. The data has following fe
 
 ### Access
 
-
+Data is accessed via TabularDatasetFactory.from_delimited_files(path=url_path)
 
 ## Automated ML
-*TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
+
+Data is registered as shown below
+
+
 
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
