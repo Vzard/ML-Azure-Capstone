@@ -65,6 +65,11 @@ automl_config = AutoMLConfig(compute_target=compute_target,
 
 ###  Snapshot of model in progress
 
+![images](https://github.com/Vzard/ML-Azure-Capstone/blob/master/starter_file/jobrun.png)
+
+
+![images](https://github.com/Vzard/ML-Azure-Capstone/blob/master/starter_file/runningexperiment.png)
+
 
 
 ### Results
