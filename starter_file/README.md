@@ -11,6 +11,7 @@ is this person likely to have stroke. The features and labels are stated below.
 ## Project Set Up and Installation
 
 There are no special setup required. I have data downloaded into by github. This is accessed via code in Azure ML. 
+https://raw.githubusercontent.com/Vzard/ML-Azure-Capstone/master/StrokeData_V1.csv
 
 ## Dataset
 
