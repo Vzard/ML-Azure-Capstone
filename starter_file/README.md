@@ -22,12 +22,12 @@ The data set is from Kaggle at http:///www.kaggle.com. The data has following fe
 3. hypertension	
 4. heart_disease	
 5. ever_married	
-6.work_type	
-7.Residence_type	
-8.avg_glucose_level	
-9.bmi	
-10.Smoking_status	
-11.stroke (1/0) -label - This the the decision variable. 
+6. work_type	
+7. Residence_type	
+8. avg_glucose_level	
+9. bmi	
+10. Smoking_status	
+11. stroke (1/0) -label - This the the decision variable. 
  
 ### Task
 *TODO*: Explain the task you are going to be solving with this dataset and the features you will be using for it.
