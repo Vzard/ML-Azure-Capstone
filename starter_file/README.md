@@ -15,19 +15,20 @@ There are no special setup required. I have data downloaded into by github. This
 ## Dataset
 
 ### Overview
-The data set is from Kaggle at http:///www.kaggle.com. The data has following features and label
+The data set is from Kaggle at http:///www.kaggle.com. The data has following features and label, and values
 
-1. Age - 
-2. gender	
-3. hypertension	
-4. heart_disease	
-5. ever_married	
-6. work_type	
-7. Residence_type	
-8. avg_glucose_level	
-9. bmi	
-10. Smoking_status	
-11. stroke (1/0) -label - This the the decision variable. 
+1. Age - positive integer
+2. gender	 - Male/Female
+3. hypertension	 - 1/0 (yes/No)
+4. heart_disease	 -1/0 (Yes/No)
+5. ever_married	- (yes/No)
+6. work_type	- (children (less than 18 years)/never worked/self employed/Govt/Private)
+7. Residence_type	- Urban/rural
+8. avg_glucose_level	( real number)
+9. bmi	(real number)
+10. Smoking_status	(unknown/formerly smoked/smokes/Never Snoked)
+=========================================================
+12. stroke (1/0) -label - This the the decision variable. 
  
 ### Task
 *TODO*: Explain the task you are going to be solving with this dataset and the features you will be using for it.
