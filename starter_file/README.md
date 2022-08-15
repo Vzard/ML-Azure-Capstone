@@ -40,9 +40,32 @@ Data is accessed via TabularDatasetFactory.from_delimited_files(path=url_path)
 
 ## Automated ML
 
-Data is registered as shown below
+### Data is registered as shown below
 
 ![images](https://github.com/Vzard/ML-Azure-Capstone/blob/master/starter_file/registerdata.png)
+
+### Parameters and explanations
+
+automl_settings = {
+    "experiment_timeout_minutes": 20,  // This sets timeout for experiment
+    "max_concurrent_iterations": 4,  //4 trials run concurrently
+    "primary_metric" : 'AUC_weighted', //WHile other metrics can be chosen for classification this is for applicability
+    "n_cross_validations": 5  //reduce bias with 5 fold cross validation
+}
+ 
+automl_config = AutoMLConfig(compute_target=compute_target,
+                             task = "classification",  //type of ML model
+                             training_data=dataset,
+                             label_column_name="stroke",  //label
+                             enable_early_stopping= True,
+                             test_size =0.2,  // Total is about 5000 data points, 1000 chosen for training
+                             featurization= 'auto',  //did not go EDA, since point of exercise to showcase Azure ML aspect
+                             debug_log = "automl_errors.log",
+                             **automl_settings
+
+###  Snapshot of model in progress
+
+
 
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
