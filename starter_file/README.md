@@ -4,7 +4,7 @@
 
 The aim of the exercise is to create two sets of deliverables a) AutoML implementation  and b) Hyperdrive implementation of stroke prediction. 
 Though term is "prediction", this is a classification problem. This answers the basic question - given the characteristic of the person
-is this person likely to have stroke. The features and labels are stated below. 
+is this person likely to have had a stroke. The features and labels are stated below. 
 
 *TODO:* Write a short introduction to your project.
 
@@ -95,29 +95,37 @@ automl_config = AutoMLConfig(compute_target=compute_target,
 
 ### Results
 
-### Results
- 
 Accuracy
 0.95132
 (primary metric)
 AUC weighted
 0.85832
+
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
-
-
 ### Posted the run detail widget and Posted the best model
-## Hyperparameter Tuning
-
-*TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
 
 ## Hyperparameter Tuning
-*TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
+
+Logistic regression that lends easy for classification purposes is used. And it also provides parsimonious parameters
 
 
+## Screenshots
 
 ## Model Deployment
 
-*TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
+AutoML model deployed (best model) stated in AutoML section
+
+### Deployed Model
+![images](https://github.com/Vzard/ML-Azure-Capstone/blob/master/starter_file/newmodel_deployed.png)
+
+### Post deployment state
+![images](https://github.com/Vzard/ML-Azure-Capstone/blob/master/starter_file/post_dep_state.png)
+
+### Using the endpoint
+![images](https://github.com/Vzard/ML-Azure-Capstone/blob/master/starter_file/using_the_service.png)
+
+### JSON ooutput
+![images](https://github.com/Vzard/ML-Azure-Capstone/blob/master/starter_file/jsonputput.png)
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
