@@ -94,20 +94,29 @@ automl_config = AutoMLConfig(compute_target=compute_target,
 ![images](https://github.com/Vzard/ML-Azure-Capstone/blob/master/starter_file/jsonputput.png)
 
 ### Results
-*TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
 
+### Results
+ 
+Accuracy
+0.95132
+(primary metric)
+AUC weighted
+0.85832
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+
+
+### Posted the run detail widget and Posted the best model
+## Hyperparameter Tuning
+
+*TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
 
 ## Hyperparameter Tuning
 *TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
 
 
-### Results
-*TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
-
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
 ## Model Deployment
+
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
 
 ## Screen Recording
