@@ -68,6 +68,10 @@ automl_config = AutoMLConfig(compute_target=compute_target,
 ### - Models set to run
 ![images](https://github.com/Vzard/ML-Azure-Capstone/blob/master/starter_file/Models_running.png)
 
+### Run details
+![images](https://github.com/Vzard/ML-Azure-Capstone/blob/master/starter_file/rundetails.png)
+
+![images](https://github.com/Vzard/ML-Azure-Capstone/blob/master/starter_file/rundetails_2.png)
 
 ### Best Model
 
@@ -84,10 +88,10 @@ automl_config = AutoMLConfig(compute_target=compute_target,
 ![images](https://github.com/Vzard/ML-Azure-Capstone/blob/master/starter_file/post_dep_state.png)
 
 ### Using the endpoint
-
+![images](https://github.com/Vzard/ML-Azure-Capstone/blob/master/starter_file/using_the_service.png)
 
 ### JSON ooutput
-
+![images](https://github.com/Vzard/ML-Azure-Capstone/blob/master/starter_file/jsonputput.png)
 
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
