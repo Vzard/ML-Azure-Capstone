@@ -108,6 +108,26 @@ AUC weighted
 
 Logistic regression that lends easy for classification purposes is used. And it also provides parsimonious parameters
 
+parameter_sampling = RandomParameterSampling(
+                    {
+                        "--C":uniform(0.05,0.10),
+                        "--max_iter":choice(25,50,75,100) 
+                    }
+)
+
+#for ML method 2
+# Create a SKLearn estimator for use with train.py
+
+#TODO: Create your estimator and hyperdrive config
+
+sklearn_env = Environment.from_conda_specification('sklearn-env',"conda_dependencies.yml")
+
+hyperdrive_run_config = HyperDriveConfig(run_config=estimator,
+                                         hyperparameter_sampling=parameter_sampling,
+                                         primary_metric_name="Accuracy",
+                                         primary_metric_goal=PrimaryMetricGoal.MAXIMIZE,
+                                         max_total_runs=25,
+                                         max_concurrent_runs=5)
 
 ## Screenshots
 
