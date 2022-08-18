@@ -115,12 +115,13 @@ parameter_sampling = RandomParameterSampling(
                     }
 )
 
-#for ML method 2
-# Create a SKLearn estimator for use with train.py
-
-#TODO: Create your estimator and hyperdrive config
+###Create your estimator and hyperdrive config
 
 sklearn_env = Environment.from_conda_specification('sklearn-env',"conda_dependencies.yml")
+estimator = ScriptRunConfig(source_directory='.',
+                            command=['python', 'train.py'],
+                            compute_target=compute_target,
+                            environment=sklearn_env)
 
 hyperdrive_run_config = HyperDriveConfig(run_config=estimator,
                                          hyperparameter_sampling=parameter_sampling,
@@ -129,10 +130,23 @@ hyperdrive_run_config = HyperDriveConfig(run_config=estimator,
                                          max_total_runs=25,
                                          max_concurrent_runs=5)
 
+
 ## Screenshots
+### Hyper drive job
 
-## Model Deployment
+![images](https://github.com/Vzard/ML-Azure-Capstone/blob/master/starter_file/hyper_drive_job.png)
 
+### hyper drive best model detail
+![images](https://github.com/Vzard/ML-Azure-Capstone/blob/master/starter_file/best_model_detail.png)
+
+### Overview of best model
+![images](https://github.com/Vzard/ML-Azure-Capstone/blob/master/starter_file/ hyper_fina_best.png)
+
+### Registered
+
+![images](https://github.com/Vzard/ML-Azure-Capstone/blob/master/starter_file/hyper_drive_register.png)
+
+## Model Deployment - (AutoML deployed)
 AutoML model deployed (best model) stated in AutoML section
 
 ### Deployed Model
@@ -144,7 +158,7 @@ AutoML model deployed (best model) stated in AutoML section
 ### Using the endpoint
 ![images](https://github.com/Vzard/ML-Azure-Capstone/blob/master/starter_file/using_the_service.png)
 
-### JSON ooutput
+### JSON output
 ![images](https://github.com/Vzard/ML-Azure-Capstone/blob/master/starter_file/jsonputput.png)
 
 ## Screen Recording
