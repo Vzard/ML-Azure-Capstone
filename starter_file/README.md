@@ -104,6 +104,7 @@ AUC weighted
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 ### Posted the run detail widget and Posted the best model
 
+The data is imbalanched and hence the choice of AUC as a primary metric.  AutoML does well with 0.85
 ## Hyperparameter Tuning
 
 Logistic regression that lends easy for classification purposes is used. And it also provides parsimonious parameters
@@ -168,4 +169,4 @@ AutoML model deployed (best model) stated in AutoML section
 - Demo of a sample request sent to the endpoint and its response
 
 ## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+Clearly, use of SMOTE to resolve imbalanced data could have enabled AUC to a better value. Random Forest could have been an alternate choice. To a great extent, attempted to increase cross validation in AutoML to reduce the impact of balanced data. The hyperdrive run did not include such methods. 
